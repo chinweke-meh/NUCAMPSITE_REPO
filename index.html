@@ -32,9 +32,9 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col col-md-4 col-xl-2">
-                    
-                    
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target=".reserveeModal">Reserve Campsite</button>
+                    <a  href="#reserveModal" role="button" class="btn btn-info" id="reserveButton" 
+                    title="Or call us at <br /><strong>1-206-555-1234</strong>"
+                    >Reserve Campsite</a>
                 
 
                 <!-- 
@@ -82,7 +82,7 @@
                                 class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <a role="button" id="loginButton">
                         <i class="fa fa-sign-in"></i> Login
                     </a>
                 </span>
@@ -152,7 +152,7 @@
     </div>
     </div>
 -->
-    <div class="modal fade reserveeModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal fade" id="reserveModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-info">
@@ -411,7 +411,7 @@ Reserve a Campsite with the toolkit function - see the header for the associate 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
-    
+
 <!--remove the JavaScript at the bottom of the page 
     that you added to support tooltips. 
     <script>
