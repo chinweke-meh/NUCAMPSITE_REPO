@@ -413,7 +413,6 @@ Reserve a Campsite with the toolkit function - see the header for the associate 
     <script>
         $(function() {
             $(".carousel").carousel( { interval: 2000 } );
-<<<<<<< HEAD
             $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("i").hasClass("fa-pause")) {
                     $(".carousel").carousel("pause");
@@ -424,13 +423,6 @@ Reserve a Campsite with the toolkit function - see the header for the associate 
                     $("#carouselButton").children("i").removeClass("fa-play");
                     $("#carouselButton").children("i").addClass("fa-pause"); 
                 }
-=======
-            $("#carouselPause").click(function(){
-                $(".carousel").carousel("pause");
-            });
-            $("#carouselPlay").click(function(){
-                $(".carousel").carousel("cycle");
->>>>>>> master
             });
         });
     </script>
